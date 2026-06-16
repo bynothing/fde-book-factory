@@ -1,0 +1,21 @@
+{
+  "entry": {
+    "id": "CH03",
+    "order": 3,
+    "source": "D:\\AI_native_change\\FDE及相关的问题\\book-outline\\manuscript\\CH03_倒回去看_传统产业AI交付的结构性瓶颈.md",
+    "title": "第三章 倒回去看：传统产业 AI 交付的结构性瓶颈",
+    "wechatTitle": "倒回去看：传统产业 AI 交付的结构性瓶颈",
+    "digest": "第二章写了一个已经发生的变化：一个强 FDE，借助 AI、工具链、基础设施和数字员工，开始承担过去一支小队才能完成的工作。 这一章要倒回去看原因。 FDE 不是突然出现的岗位包装，也不是软件行",
+    "collection": "AI-FDE 书稿连载",
+    "category": "产业 AI 落地",
+    "author": "渔夫-AI",
+    "html": "D:\\AI_native_change\\FDE及相关的问题\\book-outline\\wechat-publish\\html\\03_CH03_倒回去看：传统产业AI交付的结构性瓶颈.wechat.html"
+  },
+  "result": {
+    "command": "node D:\\ai-source-code\\yunjing-mcp\\platform\\utils\\wechat-publish-cli.mjs publish --file D:\\AI_native_change\\FDE及相关的问题\\book-outline\\wechat-publish\\html\\03_CH03_倒回去看：传统产业AI交付的结构性瓶颈.wechat.html --title \"倒回去看：传统产业 AI 交付的结构性瓶颈\" --collection \"AI-FDE 书稿连载\" --category \"产业 AI 落地\" --digest \"第二章写了一个已经发生的变化：一个强 FDE，借助 AI、工具链、基础设施和数字员工，开始承担过去一支小队才能完成的工作。 这一章要倒回去看原因。 FDE 不是突然出现的岗位包装，也不是软件行\" --author 渔夫-AI --cover auto --raw",
+    "status": 0,
+    "stdout": "{\n  \"success\": true,\n  \"tenant\": \"digital-wind-tunnel\",\n  \"baseUrl\": \"https://dev.xlingdata.com/admin-api\",\n  \"coverMode\": \"generated-data-url\",\n  \"result\": {\n    \"success\": true,\n    \"topic\": \"倒回去看：传统产业 AI 交付的结构性瓶颈\",\n    \"themeStyle\": \"default\",\n    \"message\": \"发布成功\",\n    \"title\": \"倒回去看：传统产业 AI 交付的结构性瓶颈\",\n    \"pushToAll\": false,\n    \"collectionName\": \"AI-FDE 书稿连载\"\n  }\n}\n",
+    "stderr": "",
+    "error": null
+  }
+}

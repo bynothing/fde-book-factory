@@ -1,0 +1,21 @@
+{
+  "entry": {
+    "id": "CH17",
+    "order": 17,
+    "source": "D:\\AI_native_change\\FDE及相关的问题\\book-outline\\manuscript\\CH17_什么样的组织才能跑通FDE.md",
+    "title": "第十七章 什么样的组织才能跑通 FDE",
+    "wechatTitle": "什么样的组织才能跑通 FDE",
+    "digest": "第十六章讲了系统化 FDE 人才培养体系：四层递进（AI 思维重塑、全栈工具训练、业务解构训练、项目全链路实战）和四档成长阶段（见习、初级、中级、高级 FDE）。 但培养体系不能孤立存在。 一",
+    "collection": "AI-FDE 书稿连载",
+    "category": "产业 AI 落地",
+    "author": "渔夫-AI",
+    "html": "D:\\AI_native_change\\FDE及相关的问题\\book-outline\\wechat-publish\\html\\17_CH17_什么样的组织才能跑通FDE.wechat.html"
+  },
+  "result": {
+    "command": "node D:\\ai-source-code\\yunjing-mcp\\platform\\utils\\wechat-publish-cli.mjs publish --file D:\\AI_native_change\\FDE及相关的问题\\book-outline\\wechat-publish\\html\\17_CH17_什么样的组织才能跑通FDE.wechat.html --title \"什么样的组织才能跑通 FDE\" --collection \"AI-FDE 书稿连载\" --category \"产业 AI 落地\" --digest \"第十六章讲了系统化 FDE 人才培养体系：四层递进（AI 思维重塑、全栈工具训练、业务解构训练、项目全链路实战）和四档成长阶段（见习、初级、中级、高级 FDE）。 但培养体系不能孤立存在。 一\" --author 渔夫-AI --cover auto --raw",
+    "status": 0,
+    "stdout": "{\n  \"success\": true,\n  \"tenant\": \"digital-wind-tunnel\",\n  \"baseUrl\": \"https://dev.xlingdata.com/admin-api\",\n  \"coverMode\": \"generated-data-url\",\n  \"result\": {\n    \"success\": true,\n    \"topic\": \"什么样的组织才能跑通 FDE\",\n    \"themeStyle\": \"default\",\n    \"message\": \"发布成功\",\n    \"title\": \"什么样的组织才能跑通 FDE\",\n    \"pushToAll\": false,\n    \"collectionName\": \"AI-FDE 书稿连载\"\n  }\n}\n",
+    "stderr": "",
+    "error": null
+  }
+}

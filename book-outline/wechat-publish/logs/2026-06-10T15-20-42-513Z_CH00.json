@@ -1,0 +1,29 @@
+{
+  "entry": {
+    "id": "CH00",
+    "order": 0,
+    "source": "D:\\AI_native_change\\FDE及相关的问题\\book-outline\\manuscript\\CH00_前言_不是概念而是一个已经发生的现场.md",
+    "title": "前言 不是概念，而是一个已经发生的现场",
+    "wechatTitle": "前言 不是概念，而是一个已经发生的现场",
+    "digest": "一 我是一个不太安分的人。 从最早接触计算机开始，我就对\"新东西\"有一种本能的好奇。别人看到新工具会问\"这东西稳定吗\"，我的第一反应通常是\"这东西能用来做什么以前做不了的事\"。 这个性格底色贯",
+    "collection": "AI-FDE 书稿连载",
+    "category": "产业 AI 落地",
+    "author": "渔夫-AI",
+    "html": "D:\\AI_native_change\\FDE及相关的问题\\book-outline\\wechat-publish\\html\\00_CH00_前言不是概念，而是一个已经发生的现场.wechat.html"
+  },
+  "result": {
+    "command": "node D:\\ai-source-code\\yunjing-mcp\\platform\\utils\\wechat-publish-cli.mjs publish --file D:\\AI_native_change\\FDE及相关的问题\\book-outline\\wechat-publish\\html\\00_CH00_前言不是概念，而是一个已经发生的现场.wechat.html --title \"前言 不是概念，而是一个已经发生的现场\" --collection \"AI-FDE 书稿连载\" --category \"产业 AI 落地\" --digest \"一 我是一个不太安分的人。 从最早接触计算机开始，我就对\\\"新东西\\\"有一种本能的好奇。别人看到新工具会问\\\"这东西稳定吗\\\"，我的第一反应通常是\\\"这东西能用来做什么以前做不了的事\\\"。 这个性格底色贯\" --author 渔夫-AI --cover auto --raw",
+    "status": 0,
+    "stdout": "{\n  \"success\": true,\n  \"tenant\": \"digital-wind-tunnel\",\n  \"baseUrl\": \"https://dev.xlingdata.com/admin-api\",\n  \"coverMode\": \"generated-data-url\",\n  \"result\": {\n    \"success\": true,\n    \"topic\": \"前言 不是概念，而是一个已经发生的现场\",\n    \"themeStyle\": \"default\",\n    \"message\": \"发布成功\",\n    \"title\": \"前言 不是概念，而是一个已经发生的现场\",\n    \"pushToAll\": false,\n    \"collectionName\": \"AI-FDE 书稿连载\"\n  }\n}\n",
+    "stderr": "",
+    "error": null,
+    "fallbackFrom": {
+      "command": "node D:\\ai-source-code\\yunjing-mcp\\platform\\utils\\wechat-publish-cli.mjs publish-html --html-file D:\\AI_native_change\\FDE及相关的问题\\book-outline\\wechat-publish\\html\\00_CH00_前言不是概念，而是一个已经发生的现场.wechat.html --title \"前言 不是概念，而是一个已经发生的现场\" --collection \"AI-FDE 书稿连载\" --category \"产业 AI 落地\" --digest \"一 我是一个不太安分的人。 从最早接触计算机开始，我就对\\\"新东西\\\"有一种本能的好奇。别人看到新工具会问\\\"这东西稳定吗\\\"，我的第一反应通常是\\\"这东西能用来做什么以前做不了的事\\\"。 这个性格底色贯\" --author 渔夫-AI --cover auto",
+      "status": 1,
+      "stdout": "",
+      "stderr": "file:///D:/ai-source-code/yunjing-mcp/platform/utils/base-api-client.js:95\r\n          throw new Error(`接口不存在: ${url}`);\r\n                ^\r\n\r\nError: 接口不存在: /external/wechat/autojob/publish-html\r\n    at WechatPublishService.request (file:///D:/ai-source-code/yunjing-mcp/platform/utils/base-api-client.js:95:17)\r\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\r\n    at async publishHtml (file:///D:/ai-source-code/yunjing-mcp/platform/utils/wechat-publish-cli.mjs:594:32)\r\n\r\nNode.js v22.21.1\r\n",
+      "error": null
+    },
+    "fallbackReason": "publish-html endpoint missing; retried publish --file <html> --raw"
+  }
+}

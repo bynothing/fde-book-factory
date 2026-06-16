@@ -1,0 +1,21 @@
+{
+  "entry": {
+    "id": "CH11",
+    "order": 11,
+    "source": "D:\\AI_native_change\\FDE及相关的问题\\book-outline\\manuscript\\CH11_复杂行业案例_风洞排程系统的FDE实践.md",
+    "title": "第十一章 复杂行业案例：风洞排程系统的 FDE 实践",
+    "wechatTitle": "复杂行业案例：风洞排程系统的 FDE 实践",
+    "digest": "第十章讲了一条固定的 13 步工作流作为 FDE 在低代码阶段的执行骨架。但骨架是抽象的。抽象骨架进入具体行业，每一步都会被客户业务、平台差异、团队规模所调节。 这一章选复杂试验室排程作为案例",
+    "collection": "AI-FDE 书稿连载",
+    "category": "产业 AI 落地",
+    "author": "渔夫-AI",
+    "html": "D:\\AI_native_change\\FDE及相关的问题\\book-outline\\wechat-publish\\html\\11_CH11_复杂行业案例：风洞排程系统的FDE实践.wechat.html"
+  },
+  "result": {
+    "command": "node D:\\ai-source-code\\yunjing-mcp\\platform\\utils\\wechat-publish-cli.mjs publish --file D:\\AI_native_change\\FDE及相关的问题\\book-outline\\wechat-publish\\html\\11_CH11_复杂行业案例：风洞排程系统的FDE实践.wechat.html --title \"复杂行业案例：风洞排程系统的 FDE 实践\" --collection \"AI-FDE 书稿连载\" --category \"产业 AI 落地\" --digest \"第十章讲了一条固定的 13 步工作流作为 FDE 在低代码阶段的执行骨架。但骨架是抽象的。抽象骨架进入具体行业，每一步都会被客户业务、平台差异、团队规模所调节。 这一章选复杂试验室排程作为案例\" --author 渔夫-AI --cover auto --raw",
+    "status": 0,
+    "stdout": "{\n  \"success\": true,\n  \"tenant\": \"digital-wind-tunnel\",\n  \"baseUrl\": \"https://dev.xlingdata.com/admin-api\",\n  \"coverMode\": \"generated-data-url\",\n  \"result\": {\n    \"success\": true,\n    \"topic\": \"复杂行业案例：风洞排程系统的 FDE 实践\",\n    \"themeStyle\": \"default\",\n    \"message\": \"发布成功\",\n    \"title\": \"复杂行业案例：风洞排程系统的 FDE 实践\",\n    \"pushToAll\": false,\n    \"collectionName\": \"AI-FDE 书稿连载\"\n  }\n}\n",
+    "stderr": "",
+    "error": null
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "entry": {
+    "id": "CH10",
+    "order": 10,
+    "source": "D:\\AI_native_change\\FDE及相关的问题\\book-outline\\manuscript\\CH10_基础设施驱动的交付工作流_从需求到交付成果.md",
+    "title": "第十章 基础设施驱动的交付工作流：从需求到交付成果",
+    "wechatTitle": "基础设施驱动的交付工作流：从需求到交付成果",
+    "digest": "第九章解释了团队资源数字化平台作为 AIFDE 背后的基础设施到底由哪几层构成、每一层具体做什么。这一章回答下一个问题：这套基础设施到底如何把一个产业需求推进为可运行、可验证的交付成果？ 答案",
+    "collection": "AI-FDE 书稿连载",
+    "category": "产业 AI 落地",
+    "author": "渔夫-AI",
+    "html": "D:\\AI_native_change\\FDE及相关的问题\\book-outline\\wechat-publish\\html\\10_CH10_基础设施驱动的交付工作流：从需求到交付成果.wechat.html"
+  },
+  "result": {
+    "command": "node D:\\ai-source-code\\yunjing-mcp\\platform\\utils\\wechat-publish-cli.mjs publish --file D:\\AI_native_change\\FDE及相关的问题\\book-outline\\wechat-publish\\html\\10_CH10_基础设施驱动的交付工作流：从需求到交付成果.wechat.html --title 基础设施驱动的交付工作流：从需求到交付成果 --collection \"AI-FDE 书稿连载\" --category \"产业 AI 落地\" --digest \"第九章解释了团队资源数字化平台作为 AIFDE 背后的基础设施到底由哪几层构成、每一层具体做什么。这一章回答下一个问题：这套基础设施到底如何把一个产业需求推进为可运行、可验证的交付成果？ 答案\" --author 渔夫-AI --cover auto --raw",
+    "status": 0,
+    "stdout": "{\n  \"success\": true,\n  \"tenant\": \"digital-wind-tunnel\",\n  \"baseUrl\": \"https://dev.xlingdata.com/admin-api\",\n  \"coverMode\": \"generated-data-url\",\n  \"result\": {\n    \"success\": true,\n    \"topic\": \"基础设施驱动的交付工作流：从需求到交付成果\",\n    \"themeStyle\": \"default\",\n    \"message\": \"发布成功\",\n    \"title\": \"基础设施驱动的交付工作流：从需求到交付成果\",\n    \"pushToAll\": false,\n    \"collectionName\": \"AI-FDE 书稿连载\"\n  }\n}\n",
+    "stderr": "",
+    "error": null
+  }
+}

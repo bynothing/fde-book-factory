@@ -1,0 +1,21 @@
+{
+  "entry": {
+    "id": "CH19",
+    "order": 19,
+    "source": "D:\\AI_native_change\\FDE及相关的问题\\book-outline\\manuscript\\CH19_结语_未来属于更少的人更强的AI更深的落地.md",
+    "title": "结语 未来属于更少的人、更强的 AI、更深的落地",
+    "wechatTitle": "结语 未来属于更少的人、更强的 AI、更深的落地",
+    "digest": "一、回到开篇：这不是预测，是已经发生的现场 本书从第一章就开始写一个事实：产业 AI 的投入在高速增长，企业 AI 的使用率在大幅攀升，但真正把 AI 转化为业务成果的企业仍然是少数。 这个事",
+    "collection": "AI-FDE 书稿连载",
+    "category": "产业 AI 落地",
+    "author": "渔夫-AI",
+    "html": "D:\\AI_native_change\\FDE及相关的问题\\book-outline\\wechat-publish\\html\\19_CH19_结语未来属于更少的人、更强的AI、更深的落地.wechat.html"
+  },
+  "result": {
+    "command": "node D:\\ai-source-code\\yunjing-mcp\\platform\\utils\\wechat-publish-cli.mjs publish --file D:\\AI_native_change\\FDE及相关的问题\\book-outline\\wechat-publish\\html\\19_CH19_结语未来属于更少的人、更强的AI、更深的落地.wechat.html --title \"结语 未来属于更少的人、更强的 AI、更深的落地\" --collection \"AI-FDE 书稿连载\" --category \"产业 AI 落地\" --digest \"一、回到开篇：这不是预测，是已经发生的现场 本书从第一章就开始写一个事实：产业 AI 的投入在高速增长，企业 AI 的使用率在大幅攀升，但真正把 AI 转化为业务成果的企业仍然是少数。 这个事\" --author 渔夫-AI --cover auto --raw",
+    "status": 0,
+    "stdout": "{\n  \"success\": true,\n  \"tenant\": \"digital-wind-tunnel\",\n  \"baseUrl\": \"https://dev.xlingdata.com/admin-api\",\n  \"coverMode\": \"generated-data-url\",\n  \"result\": {\n    \"success\": true,\n    \"topic\": \"结语 未来属于更少的人、更强的 AI、更深的落地\",\n    \"themeStyle\": \"default\",\n    \"message\": \"发布成功\",\n    \"title\": \"结语 未来属于更少的人、更强的 AI、更深的落地\",\n    \"pushToAll\": false,\n    \"collectionName\": \"AI-FDE 书稿连载\"\n  }\n}\n",
+    "stderr": "",
+    "error": null
+  }
+}

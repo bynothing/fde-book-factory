@@ -1,0 +1,21 @@
+{
+  "entry": {
+    "id": "CH18",
+    "order": 18,
+    "source": "D:\\AI_native_change\\FDE及相关的问题\\book-outline\\manuscript\\CH18_企业如何真正落地AI-FDE体系.md",
+    "title": "第十八章 企业如何真正落地 AI-FDE 体系",
+    "wechatTitle": "企业如何真正落地 AI-FDE 体系",
+    "digest": "前面所有章节完成了 AIFDE 的方法论：从 FDE 出现的产业 AI 时代背景（CH01CH03），到 FDE 的责任链条重构（CH04）和标准工作闭环（CH05），到 FDE 的人才能力模",
+    "collection": "AI-FDE 书稿连载",
+    "category": "产业 AI 落地",
+    "author": "渔夫-AI",
+    "html": "D:\\AI_native_change\\FDE及相关的问题\\book-outline\\wechat-publish\\html\\18_CH18_企业如何真正落地AI-FDE体系.wechat.html"
+  },
+  "result": {
+    "command": "node D:\\ai-source-code\\yunjing-mcp\\platform\\utils\\wechat-publish-cli.mjs publish --file D:\\AI_native_change\\FDE及相关的问题\\book-outline\\wechat-publish\\html\\18_CH18_企业如何真正落地AI-FDE体系.wechat.html --title \"企业如何真正落地 AI-FDE 体系\" --collection \"AI-FDE 书稿连载\" --category \"产业 AI 落地\" --digest \"前面所有章节完成了 AIFDE 的方法论：从 FDE 出现的产业 AI 时代背景（CH01CH03），到 FDE 的责任链条重构（CH04）和标准工作闭环（CH05），到 FDE 的人才能力模\" --author 渔夫-AI --cover auto --raw",
+    "status": 0,
+    "stdout": "{\n  \"success\": true,\n  \"tenant\": \"digital-wind-tunnel\",\n  \"baseUrl\": \"https://dev.xlingdata.com/admin-api\",\n  \"coverMode\": \"generated-data-url\",\n  \"result\": {\n    \"success\": true,\n    \"topic\": \"企业如何真正落地 AI-FDE 体系\",\n    \"themeStyle\": \"default\",\n    \"message\": \"发布成功\",\n    \"title\": \"企业如何真正落地 AI-FDE 体系\",\n    \"pushToAll\": false,\n    \"collectionName\": \"AI-FDE 书稿连载\"\n  }\n}\n",
+    "stderr": "",
+    "error": null
+  }
+}

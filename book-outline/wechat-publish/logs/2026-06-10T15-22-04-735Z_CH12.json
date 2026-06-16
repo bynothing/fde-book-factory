@@ -1,0 +1,21 @@
+{
+  "entry": {
+    "id": "CH12",
+    "order": 12,
+    "source": "D:\\AI_native_change\\FDE及相关的问题\\book-outline\\manuscript\\CH12_数字员工运维_FDE体系的持续运营面.md",
+    "title": "第十二章 数字员工运维：FDE 体系的持续运营面",
+    "wechatTitle": "数字员工运维：FDE 体系的持续运营面",
+    "digest": "第十一章讲了复杂行业项目里 13 步工作流如何被调节、如何与算法插件和 Web2 前端协同、如何让人机协同真正嵌入业务闭环。 但复杂项目不是上线即结束。 排程系统跑起来之后，每天都有数据进入，",
+    "collection": "AI-FDE 书稿连载",
+    "category": "产业 AI 落地",
+    "author": "渔夫-AI",
+    "html": "D:\\AI_native_change\\FDE及相关的问题\\book-outline\\wechat-publish\\html\\12_CH12_数字员工运维：FDE体系的持续运营面.wechat.html"
+  },
+  "result": {
+    "command": "node D:\\ai-source-code\\yunjing-mcp\\platform\\utils\\wechat-publish-cli.mjs publish --file D:\\AI_native_change\\FDE及相关的问题\\book-outline\\wechat-publish\\html\\12_CH12_数字员工运维：FDE体系的持续运营面.wechat.html --title \"数字员工运维：FDE 体系的持续运营面\" --collection \"AI-FDE 书稿连载\" --category \"产业 AI 落地\" --digest \"第十一章讲了复杂行业项目里 13 步工作流如何被调节、如何与算法插件和 Web2 前端协同、如何让人机协同真正嵌入业务闭环。 但复杂项目不是上线即结束。 排程系统跑起来之后，每天都有数据进入，\" --author 渔夫-AI --cover auto --raw",
+    "status": 0,
+    "stdout": "{\n  \"success\": true,\n  \"tenant\": \"digital-wind-tunnel\",\n  \"baseUrl\": \"https://dev.xlingdata.com/admin-api\",\n  \"coverMode\": \"generated-data-url\",\n  \"result\": {\n    \"success\": true,\n    \"topic\": \"数字员工运维：FDE 体系的持续运营面\",\n    \"themeStyle\": \"default\",\n    \"message\": \"发布成功\",\n    \"title\": \"数字员工运维：FDE 体系的持续运营面\",\n    \"pushToAll\": false,\n    \"collectionName\": \"AI-FDE 书稿连载\"\n  }\n}\n",
+    "stderr": "",
+    "error": null
+  }
+}

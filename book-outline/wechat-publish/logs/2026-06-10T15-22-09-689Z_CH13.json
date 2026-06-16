@@ -1,0 +1,21 @@
+{
+  "entry": {
+    "id": "CH13",
+    "order": 13,
+    "source": "D:\\AI_native_change\\FDE及相关的问题\\book-outline\\manuscript\\CH13_顶级FDE人才为什么稀缺.md",
+    "title": "第十三章 顶级 FDE 人才为什么稀缺",
+    "wechatTitle": "顶级 FDE 人才为什么稀缺",
+    "digest": "第十二章讲了数字员工运维作为 FDE 体系的持续运营面。讲了多环境多系统的运维对象、主动监控、工具脚本、多 Agent 协作、代表性故障模式、运维价值的四个维度。 但数字员工运维本身不能凭空存",
+    "collection": "AI-FDE 书稿连载",
+    "category": "产业 AI 落地",
+    "author": "渔夫-AI",
+    "html": "D:\\AI_native_change\\FDE及相关的问题\\book-outline\\wechat-publish\\html\\13_CH13_顶级FDE人才为什么稀缺.wechat.html"
+  },
+  "result": {
+    "command": "node D:\\ai-source-code\\yunjing-mcp\\platform\\utils\\wechat-publish-cli.mjs publish --file D:\\AI_native_change\\FDE及相关的问题\\book-outline\\wechat-publish\\html\\13_CH13_顶级FDE人才为什么稀缺.wechat.html --title \"顶级 FDE 人才为什么稀缺\" --collection \"AI-FDE 书稿连载\" --category \"产业 AI 落地\" --digest \"第十二章讲了数字员工运维作为 FDE 体系的持续运营面。讲了多环境多系统的运维对象、主动监控、工具脚本、多 Agent 协作、代表性故障模式、运维价值的四个维度。 但数字员工运维本身不能凭空存\" --author 渔夫-AI --cover auto --raw",
+    "status": 0,
+    "stdout": "{\n  \"success\": true,\n  \"tenant\": \"digital-wind-tunnel\",\n  \"baseUrl\": \"https://dev.xlingdata.com/admin-api\",\n  \"coverMode\": \"generated-data-url\",\n  \"result\": {\n    \"success\": true,\n    \"topic\": \"顶级 FDE 人才为什么稀缺\",\n    \"themeStyle\": \"default\",\n    \"message\": \"发布成功\",\n    \"title\": \"顶级 FDE 人才为什么稀缺\",\n    \"pushToAll\": false,\n    \"collectionName\": \"AI-FDE 书稿连载\"\n  }\n}\n",
+    "stderr": "",
+    "error": null
+  }
+}

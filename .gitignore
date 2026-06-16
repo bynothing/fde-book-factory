@@ -1,0 +1,31 @@
+# 本机/编辑器
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+.vscode/
+.idea/
+
+# Claude 本机设置(机器相关,不入库)
+.claude/settings.local.json
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Node
+node_modules/
+
+# 临时/草稿
+*.tmp
+*.bak
+~$*
+
+# 机密(公开仓库红线)
+.env
+*.key
+*.pem
+secrets*
+credentials*

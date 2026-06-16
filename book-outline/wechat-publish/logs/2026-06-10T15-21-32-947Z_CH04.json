@@ -1,0 +1,21 @@
+{
+  "entry": {
+    "id": "CH04",
+    "order": 4,
+    "source": "D:\\AI_native_change\\FDE及相关的问题\\book-outline\\manuscript\\CH04_FDE的出现_不是岗位创新而是责任链条重构.md",
+    "title": "第四章 FDE 的出现：不是岗位创新，而是责任链条重构",
+    "wechatTitle": "FDE 的出现：不是岗位创新，而是责任链条重构",
+    "digest": "第三章把传统交付的问题摆出来：分段流水线在产业 AI 现场会同时放大五种损耗——信息损耗、沟通损耗、迭代损耗、资产损耗、运维损耗。这些损耗的根因不是某一个岗位不努力，而是责任本身被切碎了，没有",
+    "collection": "AI-FDE 书稿连载",
+    "category": "产业 AI 落地",
+    "author": "渔夫-AI",
+    "html": "D:\\AI_native_change\\FDE及相关的问题\\book-outline\\wechat-publish\\html\\04_CH04_FDE的出现：不是岗位创新，而是责任链条重构.wechat.html"
+  },
+  "result": {
+    "command": "node D:\\ai-source-code\\yunjing-mcp\\platform\\utils\\wechat-publish-cli.mjs publish --file D:\\AI_native_change\\FDE及相关的问题\\book-outline\\wechat-publish\\html\\04_CH04_FDE的出现：不是岗位创新，而是责任链条重构.wechat.html --title \"FDE 的出现：不是岗位创新，而是责任链条重构\" --collection \"AI-FDE 书稿连载\" --category \"产业 AI 落地\" --digest \"第三章把传统交付的问题摆出来：分段流水线在产业 AI 现场会同时放大五种损耗——信息损耗、沟通损耗、迭代损耗、资产损耗、运维损耗。这些损耗的根因不是某一个岗位不努力，而是责任本身被切碎了，没有\" --author 渔夫-AI --cover auto --raw",
+    "status": 0,
+    "stdout": "{\n  \"success\": true,\n  \"tenant\": \"digital-wind-tunnel\",\n  \"baseUrl\": \"https://dev.xlingdata.com/admin-api\",\n  \"coverMode\": \"generated-data-url\",\n  \"result\": {\n    \"success\": true,\n    \"topic\": \"FDE 的出现：不是岗位创新，而是责任链条重构\",\n    \"themeStyle\": \"default\",\n    \"message\": \"发布成功\",\n    \"title\": \"FDE 的出现：不是岗位创新，而是责任链条重构\",\n    \"pushToAll\": false,\n    \"collectionName\": \"AI-FDE 书稿连载\"\n  }\n}\n",
+    "stderr": "",
+    "error": null
+  }
+}

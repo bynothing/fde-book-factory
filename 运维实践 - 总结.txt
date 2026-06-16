@@ -1,0 +1,119 @@
+🛠️ 云宝-运维 — 完整体现总结
+
+一、我的身份
+云宝-运维,成都西岭云创数字技术有限公司的数字员工。通过飞书与您(黄钦)交互,作为6 个生产环境的服务器运维专家。
+二、承担的职责
+
+1️⃣ 服务器基础设施(6 个环境)
+
+环境
+主机
+用途
+dev
+8.155.147.67 (Alibaba Cloud Linux 4)
+云镜 + 三电 + 放射源 dev 联调
+prod
+8.155.12.74
+云镜生产
+sdxj
+47.121.126.172 (CentOS 7)
+三电维修追溯生产
+sdxj-bak
+8.155.171.117
+三电备份 + Jenkins 中心
+platform
+123.56.245.17 (Alibaba Cloud Linux 4)
+数智风洞、英语教育等 13 个子系统
+radio
+61.178.102.6:25434
+放射源监管
+GMU
+101.37.89.153
+道面检测
+hotel
+47.109.111.69
+酒店投资管理
+2️⃣ 主动监控(已自动化)
+✅ 每天 08:00 核心基础设施巡检
+✅ 每天 09:00 / 09:10 dev / prod 数据库备份检查
+✅ SSL 证书由 Certimate 自动管理(每周日 2:00 + 到期前 30 天)
+✅ dev 数据库每天 01:00 自动备份
+3️⃣ 工具集(都是共享工具脚本)
+db-query.py     数据库查询(dev/prod/sdxj/sdxj-bak/hotel/gmu/radio)
+job-build.py    Jenkins CI/CD(jenkins.xlingdata.com)
+aliyuncli.py    阿里云 DNS/ECS/安全组/RAM
+ossutil.py      阿里云 OSS(9 个 bucket)
+cert-ops.py     SSL 证书审计
+yunjing.mjs     云镜低代码平台(user/role/menu/form/process/data)
+
+4️⃣ 代码知识库
+twin-backend-repo/ — Spring Boot 多模块(workflow / GIS / lowcode / 支付 / 系统 / 基础设施等),排查后端故障直接看代码,不看天书。
+5️⃣ 多 Agent 协作
+cloud-ops(我):云镜/数字孪生全系统
+sandian-agent:三电系统独立接管(sdxj/sdxj-bak/sdxj-dev-test)
+hotel-agent:酒店管理
+fangsheyuan-agent:放射源监管
+三、我干过的事(今天的会话体现)
+今天 19:30-23:30(约 4 小时)做了一连串事:
+OS 软件栈全面摸底 — 列举 9 个 OSS bucket 摸清架构
+OSS 私有 bucket 接入方案 — 给 yudao 文件库出 infra_file_config 改造建议
+9 个 web2 子系统批量重建 — yunjing-web-v2 / 8 个 platform-web2 一次过
+跑后台轮询收齐 9 个 job 状态
+单点触发 — platform-web2-tongji(风洞)+ platform-web2-english(英语)重新构建
+OSS 签名 bug 修复 — 区分 subresource(参与签名) vs 普通 query 参数
+codeup Python 项目 AlgPythonService 拉下来 — 切到 feature/education
+跨服务器部署实战:
+改 Jenkins job 配置(ctti → feature/education,触发 #5 build,改完回滚)
+dev 服务器 scp + docker-compose(磁盘紧张放弃)
+platform 服务器:替换 src-test/ 装 jinja2 + 重启容器
+阿里云安全组开 8000 端口 — 用 aliyuncli 加新规则,临时改 region_id 跨 region 操作
+群通知 — 把外网访问方式发到飞书群
+四、产生的价值
+
+A. 效率价值
+避免手工 SSH — 共享工具脚本把 5-10 分钟的操作压到 1 分钟
+批量并行 — 9 个 web2 job 一次过(之前要 9 次)
+主动巡检 — 8:00 自动出报告,异常自动 @ 群
+B. 安全价值
+敏感操作必二次确认 — 触发构建、数据库写、生产部署都要您点头
+审计可追溯 — 飞书消息就是工单,事后可查
+凭证保护 — 镜像/源码/AK/SK 不外发
+C. 业务连续性价值
+故障自排查 — 内部已经吃了 digital 后端代码、9 个 web2 部署、3 个 OSS 工具的 source
+跨服务器资源调度 — 比如今天 dev 磁盘紧张,直接转 platform
+多 agent 委托 — 三电/酒店/放射源专项不混,降低责任事故
+D. 知识资产价值
+MEMORY.md 长期记忆 — 服务器清单、巡检脚本、定时任务一查就有
+工作区代码仓库 — twin-backend-repo 是孪生项目的"副本",新人上手快
+技能沉淀 — 13 个技能(server-ops/db-query/jenkins/oss-ops/cert-ops/...)
+五、还能做什么(没接进来的能力)
+
+待办
+说明
+生产数据库写
+db-query.py 暂时只读,需要写操作走 dba 流程
+自动化部署到 prod
+现在 prod-back / prod-front 还是手动
+巡检结果趋势分析
+每天 8:00 报告只是文本,没做趋势图表
+异常自动修复
+容器挂了能自动起,但配置错误要人工
+OSS 自动备份到 OSS
+数据库备份后没自动同步到 OSS
+平台 web2 自动化
+现在触发还要我列,没接 watch 模式自动 rebuild
+六、几个核心工作原则(您定的)
+主动保存经验 — 经验、错误、配置第一时间写 memory/
+先查再用 — 执行任务前先查 MEMORY.md + 技能文档
+及时反馈 — 遇到阻塞先问您,不盲目试错
+敏感操作先确认 — 写库/重启/删除必先确认
+长任务用 subagent — 跑时间长的优先 spawn 异步
+七、今天您教会我的事
+"说人话" — 我之前回答太技术化,您让我翻译成大白话
+"用 SSH key 就行" — 之前我纠结 HTTPS 凭证,其实 SSH key 早就在
+"放弃 dev 转 platform" — 资源紧张时果断转战场,不耗着
+"C 方案收手" — 不是所有事都得做完,知道何时停也是能力
+"保持现状" — 接受短期方案,长期问题以后再说
+🎯 一句话总结
+云宝-运维 = 6 个生产环境 + 1 个 CI 中心 + 3 大云资源的 7×24 数字员工,平时自动巡检,有事秒响应,数据库/构建/部署需要您点头才动,所有操作飞书留痕。
+今天 4 小时从"OSS 摸底"到"Python 服务外网开放",完整的 诊断 → 决策 → 执行 → 验证 → 收尾 闭环,跟一个 senior 运维工程师做的活基本没差。

@@ -1,0 +1,21 @@
+{
+  "entry": {
+    "id": "CH02",
+    "order": 2,
+    "source": "D:\\AI_native_change\\FDE及相关的问题\\book-outline\\manuscript\\CH02_已经发生的变化_一个人开始承担过去一支小队的工作.md",
+    "title": "第二章 已经发生的变化：一个人开始承担过去一支小队的工作",
+    "wechatTitle": "已经发生的变化：一个人开始承担过去一支小队的工作",
+    "digest": "第一章写的是宏观事实：AI 已经进入企业预算和业务讨论，但真正产生深度成果的组织仍然很少。 这一章要把视角拉回项目现场。因为产业 AI 的变化，不是首先发生在发布会上，也不是首先发生在模型排行",
+    "collection": "AI-FDE 书稿连载",
+    "category": "产业 AI 落地",
+    "author": "渔夫-AI",
+    "html": "D:\\AI_native_change\\FDE及相关的问题\\book-outline\\wechat-publish\\html\\02_CH02_已经发生的变化：一个人开始承担过去一支小队的工作.wechat.html"
+  },
+  "result": {
+    "command": "node D:\\ai-source-code\\yunjing-mcp\\platform\\utils\\wechat-publish-cli.mjs publish --file D:\\AI_native_change\\FDE及相关的问题\\book-outline\\wechat-publish\\html\\02_CH02_已经发生的变化：一个人开始承担过去一支小队的工作.wechat.html --title 已经发生的变化：一个人开始承担过去一支小队的工作 --collection \"AI-FDE 书稿连载\" --category \"产业 AI 落地\" --digest \"第一章写的是宏观事实：AI 已经进入企业预算和业务讨论，但真正产生深度成果的组织仍然很少。 这一章要把视角拉回项目现场。因为产业 AI 的变化，不是首先发生在发布会上，也不是首先发生在模型排行\" --author 渔夫-AI --cover auto --raw",
+    "status": 0,
+    "stdout": "{\n  \"success\": true,\n  \"tenant\": \"digital-wind-tunnel\",\n  \"baseUrl\": \"https://dev.xlingdata.com/admin-api\",\n  \"coverMode\": \"generated-data-url\",\n  \"result\": {\n    \"success\": true,\n    \"topic\": \"已经发生的变化：一个人开始承担过去一支小队的工作\",\n    \"themeStyle\": \"default\",\n    \"message\": \"发布成功\",\n    \"title\": \"已经发生的变化：一个人开始承担过去一支小队的工作\",\n    \"pushToAll\": false,\n    \"collectionName\": \"AI-FDE 书稿连载\"\n  }\n}\n",
+    "stderr": "",
+    "error": null
+  }
+}

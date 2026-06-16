@@ -1,0 +1,21 @@
+{
+  "entry": {
+    "id": "CH01",
+    "order": 1,
+    "source": "D:\\AI_native_change\\FDE及相关的问题\\book-outline\\manuscript\\CH01_当前事实_产业AI已经进入落地分水岭.md",
+    "title": "第一章 当前事实：产业 AI 已经进入落地分水岭",
+    "wechatTitle": "当前事实：产业 AI 已经进入落地分水岭",
+    "digest": "过去几年，企业谈 AI 的方式变了。 最早的时候，AI 是技术团队、创新部门和少数互联网公司的议题。企业看它，更多是在看模型能力、参数规模、演示效果和行业新闻。到了今天，AI 已经不再只是一个",
+    "collection": "AI-FDE 书稿连载",
+    "category": "产业 AI 落地",
+    "author": "渔夫-AI",
+    "html": "D:\\AI_native_change\\FDE及相关的问题\\book-outline\\wechat-publish\\html\\01_CH01_当前事实：产业AI已经进入落地分水岭.wechat.html"
+  },
+  "result": {
+    "command": "node D:\\ai-source-code\\yunjing-mcp\\platform\\utils\\wechat-publish-cli.mjs publish --file D:\\AI_native_change\\FDE及相关的问题\\book-outline\\wechat-publish\\html\\01_CH01_当前事实：产业AI已经进入落地分水岭.wechat.html --title \"当前事实：产业 AI 已经进入落地分水岭\" --collection \"AI-FDE 书稿连载\" --category \"产业 AI 落地\" --digest \"过去几年，企业谈 AI 的方式变了。 最早的时候，AI 是技术团队、创新部门和少数互联网公司的议题。企业看它，更多是在看模型能力、参数规模、演示效果和行业新闻。到了今天，AI 已经不再只是一个\" --author 渔夫-AI --cover auto --raw",
+    "status": 0,
+    "stdout": "{\n  \"success\": true,\n  \"tenant\": \"digital-wind-tunnel\",\n  \"baseUrl\": \"https://dev.xlingdata.com/admin-api\",\n  \"coverMode\": \"generated-data-url\",\n  \"result\": {\n    \"success\": true,\n    \"topic\": \"当前事实：产业 AI 已经进入落地分水岭\",\n    \"themeStyle\": \"default\",\n    \"message\": \"发布成功\",\n    \"title\": \"当前事实：产业 AI 已经进入落地分水岭\",\n    \"pushToAll\": false,\n    \"collectionName\": \"AI-FDE 书稿连载\"\n  }\n}\n",
+    "stderr": "",
+    "error": null
+  }
+}

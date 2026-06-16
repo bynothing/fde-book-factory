@@ -1,0 +1,21 @@
+{
+  "entry": {
+    "id": "CH08",
+    "order": 8,
+    "source": "D:\\AI_native_change\\FDE及相关的问题\\book-outline\\manuscript\\CH08_FDE的系统壁垒_基础设施人才组织与机制.md",
+    "title": "第八章 FDE 的系统壁垒：基础设施、人才、组织与机制",
+    "wechatTitle": "FDE 的系统壁垒：基础设施、人才、组织与机制",
+    "digest": "第七章讲了 AI 如何把 FDE 武装成一支团队。四层放大——认知体系、工具全栈、思维方式、Agent 工作流——合起来，确实让一个 FDE 承担了过去一支小队才能完成的工作。 但武装不是托举",
+    "collection": "AI-FDE 书稿连载",
+    "category": "产业 AI 落地",
+    "author": "渔夫-AI",
+    "html": "D:\\AI_native_change\\FDE及相关的问题\\book-outline\\wechat-publish\\html\\08_CH08_FDE的系统壁垒：基础设施、人才、组织与机制.wechat.html"
+  },
+  "result": {
+    "command": "node D:\\ai-source-code\\yunjing-mcp\\platform\\utils\\wechat-publish-cli.mjs publish --file D:\\AI_native_change\\FDE及相关的问题\\book-outline\\wechat-publish\\html\\08_CH08_FDE的系统壁垒：基础设施、人才、组织与机制.wechat.html --title \"FDE 的系统壁垒：基础设施、人才、组织与机制\" --collection \"AI-FDE 书稿连载\" --category \"产业 AI 落地\" --digest \"第七章讲了 AI 如何把 FDE 武装成一支团队。四层放大——认知体系、工具全栈、思维方式、Agent 工作流——合起来，确实让一个 FDE 承担了过去一支小队才能完成的工作。 但武装不是托举\" --author 渔夫-AI --cover auto --raw",
+    "status": 0,
+    "stdout": "{\n  \"success\": true,\n  \"tenant\": \"digital-wind-tunnel\",\n  \"baseUrl\": \"https://dev.xlingdata.com/admin-api\",\n  \"coverMode\": \"generated-data-url\",\n  \"result\": {\n    \"success\": true,\n    \"topic\": \"FDE 的系统壁垒：基础设施、人才、组织与机制\",\n    \"themeStyle\": \"default\",\n    \"message\": \"发布成功\",\n    \"title\": \"FDE 的系统壁垒：基础设施、人才、组织与机制\",\n    \"pushToAll\": false,\n    \"collectionName\": \"AI-FDE 书稿连载\"\n  }\n}\n",
+    "stderr": "",
+    "error": null
+  }
+}

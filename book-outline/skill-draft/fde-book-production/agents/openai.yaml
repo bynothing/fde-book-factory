@@ -1,0 +1,7 @@
+interface:
+  display_name: "FDE Book Production"
+  short_description: "中文长书稿图文排版、HTML/PDF与公众号生产"
+  brand_color: "#1D4ED8"
+  default_prompt: "Use $fde-book-production to continue packaging this book into a mobile-friendly illustrated HTML/PDF release."
+policy:
+  allow_implicit_invocation: true

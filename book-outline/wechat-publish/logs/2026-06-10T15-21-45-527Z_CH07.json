@@ -1,0 +1,21 @@
+{
+  "entry": {
+    "id": "CH07",
+    "order": 7,
+    "source": "D:\\AI_native_change\\FDE及相关的问题\\book-outline\\manuscript\\CH07_AI如何把FDE武装成一支团队.md",
+    "title": "第七章 AI 如何把 FDE 武装成一支团队",
+    "wechatTitle": "AI 如何把 FDE 武装成一支团队",
+    "digest": "第六章给了 FDE 的能力模型：业务解构、架构判断、AI 工程、项目推进、产品和资产沉淀、经营意识。这六种能力合在一起，构成一个能独立跑通业务闭环的复合角色。 但合在一起的同时，也出现了一个尖",
+    "collection": "AI-FDE 书稿连载",
+    "category": "产业 AI 落地",
+    "author": "渔夫-AI",
+    "html": "D:\\AI_native_change\\FDE及相关的问题\\book-outline\\wechat-publish\\html\\07_CH07_AI如何把FDE武装成一支团队.wechat.html"
+  },
+  "result": {
+    "command": "node D:\\ai-source-code\\yunjing-mcp\\platform\\utils\\wechat-publish-cli.mjs publish --file D:\\AI_native_change\\FDE及相关的问题\\book-outline\\wechat-publish\\html\\07_CH07_AI如何把FDE武装成一支团队.wechat.html --title \"AI 如何把 FDE 武装成一支团队\" --collection \"AI-FDE 书稿连载\" --category \"产业 AI 落地\" --digest \"第六章给了 FDE 的能力模型：业务解构、架构判断、AI 工程、项目推进、产品和资产沉淀、经营意识。这六种能力合在一起，构成一个能独立跑通业务闭环的复合角色。 但合在一起的同时，也出现了一个尖\" --author 渔夫-AI --cover auto --raw",
+    "status": 0,
+    "stdout": "{\n  \"success\": true,\n  \"tenant\": \"digital-wind-tunnel\",\n  \"baseUrl\": \"https://dev.xlingdata.com/admin-api\",\n  \"coverMode\": \"generated-data-url\",\n  \"result\": {\n    \"success\": true,\n    \"topic\": \"AI 如何把 FDE 武装成一支团队\",\n    \"themeStyle\": \"default\",\n    \"message\": \"发布成功\",\n    \"title\": \"AI 如何把 FDE 武装成一支团队\",\n    \"pushToAll\": false,\n    \"collectionName\": \"AI-FDE 书稿连载\"\n  }\n}\n",
+    "stderr": "",
+    "error": null
+  }
+}

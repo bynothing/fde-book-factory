@@ -1,0 +1,21 @@
+{
+  "entry": {
+    "id": "CH15",
+    "order": 15,
+    "source": "D:\\AI_native_change\\FDE及相关的问题\\book-outline\\manuscript\\CH15_创始人为什么天然接近FDE原型.md",
+    "title": "第十五章 创始人为什么天然接近 FDE 原型",
+    "wechatTitle": "创始人为什么天然接近 FDE 原型",
+    "digest": "第十四章写了 FDE 人才成型的三条路径：技术人才向业务前端渗透、业务/销售/售前人才向技术后端渗透、应届生 AI Native 原生培养。这三条路径有一个共同特征——都是从\"非 FDE\"改造",
+    "collection": "AI-FDE 书稿连载",
+    "category": "产业 AI 落地",
+    "author": "渔夫-AI",
+    "html": "D:\\AI_native_change\\FDE及相关的问题\\book-outline\\wechat-publish\\html\\15_CH15_创始人为什么天然接近FDE原型.wechat.html"
+  },
+  "result": {
+    "command": "node D:\\ai-source-code\\yunjing-mcp\\platform\\utils\\wechat-publish-cli.mjs publish --file D:\\AI_native_change\\FDE及相关的问题\\book-outline\\wechat-publish\\html\\15_CH15_创始人为什么天然接近FDE原型.wechat.html --title \"创始人为什么天然接近 FDE 原型\" --collection \"AI-FDE 书稿连载\" --category \"产业 AI 落地\" --digest \"第十四章写了 FDE 人才成型的三条路径：技术人才向业务前端渗透、业务/销售/售前人才向技术后端渗透、应届生 AI Native 原生培养。这三条路径有一个共同特征——都是从\\\"非 FDE\\\"改造\" --author 渔夫-AI --cover auto --raw",
+    "status": 0,
+    "stdout": "{\n  \"success\": true,\n  \"tenant\": \"digital-wind-tunnel\",\n  \"baseUrl\": \"https://dev.xlingdata.com/admin-api\",\n  \"coverMode\": \"generated-data-url\",\n  \"result\": {\n    \"success\": true,\n    \"topic\": \"创始人为什么天然接近 FDE 原型\",\n    \"themeStyle\": \"default\",\n    \"message\": \"发布成功\",\n    \"title\": \"创始人为什么天然接近 FDE 原型\",\n    \"pushToAll\": false,\n    \"collectionName\": \"AI-FDE 书稿连载\"\n  }\n}\n",
+    "stderr": "",
+    "error": null
+  }
+}

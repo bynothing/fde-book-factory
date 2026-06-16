@@ -1,0 +1,21 @@
+{
+  "entry": {
+    "id": "CH14",
+    "order": 14,
+    "source": "D:\\AI_native_change\\FDE及相关的问题\\book-outline\\manuscript\\CH14_FDE人才成型的三条路径.md",
+    "title": "第十四章 FDE 人才成型的三条路径",
+    "wechatTitle": "FDE 人才成型的三条路径",
+    "digest": "第十三章讲了 FDE 人才稀缺是行业普遍规律。讲了市场上几乎没有现成 FDE 候选人、直接招聘解决不了问题、平台和 AI 工具能降低成才门槛但不能跳过培养本身、企业必须建立自己的 FDE 人才",
+    "collection": "AI-FDE 书稿连载",
+    "category": "产业 AI 落地",
+    "author": "渔夫-AI",
+    "html": "D:\\AI_native_change\\FDE及相关的问题\\book-outline\\wechat-publish\\html\\14_CH14_FDE人才成型的三条路径.wechat.html"
+  },
+  "result": {
+    "command": "node D:\\ai-source-code\\yunjing-mcp\\platform\\utils\\wechat-publish-cli.mjs publish --file D:\\AI_native_change\\FDE及相关的问题\\book-outline\\wechat-publish\\html\\14_CH14_FDE人才成型的三条路径.wechat.html --title \"FDE 人才成型的三条路径\" --collection \"AI-FDE 书稿连载\" --category \"产业 AI 落地\" --digest \"第十三章讲了 FDE 人才稀缺是行业普遍规律。讲了市场上几乎没有现成 FDE 候选人、直接招聘解决不了问题、平台和 AI 工具能降低成才门槛但不能跳过培养本身、企业必须建立自己的 FDE 人才\" --author 渔夫-AI --cover auto --raw",
+    "status": 0,
+    "stdout": "{\n  \"success\": true,\n  \"tenant\": \"digital-wind-tunnel\",\n  \"baseUrl\": \"https://dev.xlingdata.com/admin-api\",\n  \"coverMode\": \"generated-data-url\",\n  \"result\": {\n    \"success\": true,\n    \"topic\": \"FDE 人才成型的三条路径\",\n    \"themeStyle\": \"default\",\n    \"message\": \"发布成功\",\n    \"title\": \"FDE 人才成型的三条路径\",\n    \"pushToAll\": false,\n    \"collectionName\": \"AI-FDE 书稿连载\"\n  }\n}\n",
+    "stderr": "",
+    "error": null
+  }
+}

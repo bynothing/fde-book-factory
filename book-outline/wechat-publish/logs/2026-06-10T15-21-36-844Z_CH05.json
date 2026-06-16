@@ -1,0 +1,21 @@
+{
+  "entry": {
+    "id": "CH05",
+    "order": 5,
+    "source": "D:\\AI_native_change\\FDE及相关的问题\\book-outline\\manuscript\\CH05_AI-FDE的标准工作闭环.md",
+    "title": "第五章 AI-FDE 的标准工作闭环",
+    "wechatTitle": "AI-FDE 的标准工作闭环",
+    "digest": "第四章把 FDE 定义清楚了：它是把传统交付中被拆散的责任重新合并，对“需求到交付成果”完整负责的角色。岗位名称可以保留，组织结构可以保留，但责任链条必须重新接起来。 但定义不能停在名词上。一",
+    "collection": "AI-FDE 书稿连载",
+    "category": "产业 AI 落地",
+    "author": "渔夫-AI",
+    "html": "D:\\AI_native_change\\FDE及相关的问题\\book-outline\\wechat-publish\\html\\05_CH05_AI-FDE的标准工作闭环.wechat.html"
+  },
+  "result": {
+    "command": "node D:\\ai-source-code\\yunjing-mcp\\platform\\utils\\wechat-publish-cli.mjs publish --file D:\\AI_native_change\\FDE及相关的问题\\book-outline\\wechat-publish\\html\\05_CH05_AI-FDE的标准工作闭环.wechat.html --title \"AI-FDE 的标准工作闭环\" --collection \"AI-FDE 书稿连载\" --category \"产业 AI 落地\" --digest \"第四章把 FDE 定义清楚了：它是把传统交付中被拆散的责任重新合并，对“需求到交付成果”完整负责的角色。岗位名称可以保留，组织结构可以保留，但责任链条必须重新接起来。 但定义不能停在名词上。一\" --author 渔夫-AI --cover auto --raw",
+    "status": 0,
+    "stdout": "{\n  \"success\": true,\n  \"tenant\": \"digital-wind-tunnel\",\n  \"baseUrl\": \"https://dev.xlingdata.com/admin-api\",\n  \"coverMode\": \"generated-data-url\",\n  \"result\": {\n    \"success\": true,\n    \"topic\": \"AI-FDE 的标准工作闭环\",\n    \"themeStyle\": \"default\",\n    \"message\": \"发布成功\",\n    \"title\": \"AI-FDE 的标准工作闭环\",\n    \"pushToAll\": false,\n    \"collectionName\": \"AI-FDE 书稿连载\"\n  }\n}\n",
+    "stderr": "",
+    "error": null
+  }
+}

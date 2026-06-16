@@ -1,0 +1,21 @@
+{
+  "entry": {
+    "id": "CH06",
+    "order": 6,
+    "source": "D:\\AI_native_change\\FDE及相关的问题\\book-outline\\manuscript\\CH06_AI-FDE的人才能力模型.md",
+    "title": "第六章 AI-FDE 的人才能力模型",
+    "wechatTitle": "AI-FDE 的人才能力模型",
+    "digest": "第五章把 FDE 的工作拆成七步闭环：进入现场、需求解构、方案架构、快速搭建、现场迭代、业务验证、资产沉淀与基础设施反哺。 每一步都对人提出了非常具体的要求。这一章要回答的问题是： 什么样的人",
+    "collection": "AI-FDE 书稿连载",
+    "category": "产业 AI 落地",
+    "author": "渔夫-AI",
+    "html": "D:\\AI_native_change\\FDE及相关的问题\\book-outline\\wechat-publish\\html\\06_CH06_AI-FDE的人才能力模型.wechat.html"
+  },
+  "result": {
+    "command": "node D:\\ai-source-code\\yunjing-mcp\\platform\\utils\\wechat-publish-cli.mjs publish --file D:\\AI_native_change\\FDE及相关的问题\\book-outline\\wechat-publish\\html\\06_CH06_AI-FDE的人才能力模型.wechat.html --title \"AI-FDE 的人才能力模型\" --collection \"AI-FDE 书稿连载\" --category \"产业 AI 落地\" --digest \"第五章把 FDE 的工作拆成七步闭环：进入现场、需求解构、方案架构、快速搭建、现场迭代、业务验证、资产沉淀与基础设施反哺。 每一步都对人提出了非常具体的要求。这一章要回答的问题是： 什么样的人\" --author 渔夫-AI --cover auto --raw",
+    "status": 0,
+    "stdout": "{\n  \"success\": true,\n  \"tenant\": \"digital-wind-tunnel\",\n  \"baseUrl\": \"https://dev.xlingdata.com/admin-api\",\n  \"coverMode\": \"generated-data-url\",\n  \"result\": {\n    \"success\": true,\n    \"topic\": \"AI-FDE 的人才能力模型\",\n    \"themeStyle\": \"default\",\n    \"message\": \"发布成功\",\n    \"title\": \"AI-FDE 的人才能力模型\",\n    \"pushToAll\": false,\n    \"collectionName\": \"AI-FDE 书稿连载\"\n  }\n}\n",
+    "stderr": "",
+    "error": null
+  }
+}

@@ -1,0 +1,128 @@
+<section style="max-width:600px;margin:20px auto;font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,'PingFang SC','Microsoft YaHei',sans-serif;background:#ffffff;border-radius:10px;overflow:hidden;box-shadow:0 10px 30px rgba(15,23,42,0.08);">
+  <section style="background:linear-gradient(135deg,#0f172a,#1d4ed8 62%,#0ea5e9);padding:38px 26px 34px;color:#ffffff;">
+    <span style="display:inline-block;background:rgba(255,255,255,0.18);padding:5px 11px;border-radius:20px;font-size:12px;line-height:1.4;margin-bottom:16px;">AI-FDE 书稿连载 11/20</span>
+    <h1 style="font-size:24px;font-weight:800;line-height:1.4;margin:0 0 14px;letter-spacing:0;">基础设施驱动的交付工作流：从需求到交付成果</h1>
+    <p style="font-size:14px;line-height:1.8;margin:0;color:rgba(255,255,255,0.86);">第九章解释了团队资源数字化平台作为 AIFDE 背后的基础设施到底由哪几层构成、每一层具体做什么。这一章回答下一个问题：这套基础设施到底如何把一个产业需求推进为可运行、可验证的交付成果？ 答案</p>
+  </section>
+  <section style="padding:28px 22px 30px;background:#ffffff;">
+    <section style="margin:0 0 24px;padding:14px 16px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;">
+      <p style="font-size:14px;line-height:1.85;color:#475569;margin:0;"><strong style="color:#1e40af;">本篇导读：</strong>第九章解释了团队资源数字化平台作为 AIFDE 背后的基础设施到底由哪几层构成、每一层具体做什么。这一章回答下一个问题：这套基础设施到底如何把一个产业需求推进为可运行、可验证的交付成果？ 答案</p>
+    </section>
+<h1 style="font-size:23px;line-height:1.45;color:#111827;margin:0 0 20px;font-weight:800;">第十章 基础设施驱动的交付工作流：从需求到交付成果</h1>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">第九章解释了团队资源数字化平台作为 AI-FDE 背后的基础设施到底由哪几层构成、每一层具体做什么。这一章回答下一个问题：这套基础设施到底如何把一个产业需求推进为可运行、可验证的交付成果？</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">答案是一条固定的工作流。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">这条工作流不是某个人的经验总结，也不是某一次项目的偶然顺序。它来自 FDE 在真实产业项目里反复打磨的执行骨架。它今天仍然在被每一个新项目复用，每一个新 FDE 通过它快速达到工作基线。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">它有 13 个步骤：租户与场景确认、需求文档解析、业务对象建模、数据关系矩阵设计、表单字段详细设计、依赖排序与表单创建、关联关系与联动补配、表单审计与修复、菜单发布与图标校验、角色菜单授权、BPM 流程设计与发布、端到端业务测试、输出 Web2 下一阶段输入材料。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">13 步看起来像死顺序，本质是反馈驱动的执行链。每一层都依赖下一层，但每一层也要回头看上一步是否稳定；上一步没稳，硬推进必然在后端阶段大返工。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">这一章要回答的问题是：</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">FDE 进入现场之后，如何依托基础设施把一个产业需求推进为可运行、可验证的交付成果？这条工作流的起点、终点、关键判断、常见风险是什么？</p>
+<section style="margin:34px 0 18px;padding:0 0 0 12px;border-left:4px solid #2563eb;"><h2 style="font-size:19px;line-height:1.45;color:#1f2937;margin:0;font-weight:800;">一、从需求到交付成果：工作流要回答的真问题</h2></section>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">工作流要回答的真问题，不是&quot;系统怎么搭起来&quot;，而是&quot;成果怎么被验证&quot;。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">AI 时代，软件、页面、代码和流程配置越来越容易生成。AI 可以一天之内搭出一个看起来不错的原型，可以批量创建表单和流程。但系统跑通不等于业务跑通，业务跑通不等于用户真正采用。FDE 的工作流要解决的，正是 AI 帮不了的那部分——把需求推进到用户可感知、可运行、可验证的业务结果。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">工作流的起点不是&quot;页面&quot;，而是三件事：业务对象、数据关系、流程事实。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">业务对象是产业世界里真实存在的事物——客户、商品、设备、项目、订单、合同、任务、审批、事件、状态、报告、人、角色、组织、租户、文件、通知。数据关系是这些对象之间的引用、包含、触发、跟随。流程事实是这些对象在业务里如何被使用——谁在什么条件下做什么动作，结果落在哪个状态上。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">这三件事一旦清晰，工作流后面所有动作就有了骨架。这三件事一旦模糊，后面所有动作都会反复返工。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">工作流的终点不是&quot;系统通过测试&quot;，而是三件事：业务闭环是否跑通、用户是否可持续使用、关键结果是否可验证。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">业务闭环跑通，指用户从菜单进入能完成 CRUD、能走完流程、能拿到结果。用户可持续使用，指用户第二天、第三天还能正常使用，没有报错、没有权限阻挡、没有数据残留。关键结果可验证，指业务的关键指标被记录、可被查询、可被复盘。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">这三件事对应&quot;成果优先原则&quot;在工作流层面的具体落点。系统只是载体，成果才是终点。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">13 步工作流就是围绕这起点和终点展开的固定执行骨架。下面一节一节拆开。</p>
+<section style="margin:34px 0 18px;padding:0 0 0 12px;border-left:4px solid #2563eb;"><h2 style="font-size:19px;line-height:1.45;color:#1f2937;margin:0;font-weight:800;">二、租户与场景确认：明确本次构建在哪个上下文里跑</h2></section>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">FDE 进入现场之后第一件事，不是写代码，而是确认上下文。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">上下文包括：本次构建在哪个租户跑、登录账号是什么、系统名称叫什么、系统边界在哪里、交付范围是什么。系统边界尤其关键——当前阶段只做低代码构建，Web2 定制开发是下一阶段；交付范围包括表单、菜单、权限、流程、数据联动、测试数据、Web2 输入材料，但不包括新的后端接口。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">上下文不清晰就开干，是工程事故的最大来源。FDE 在一个新项目里做了一半才发现选错了租户，或者发现交付范围需要扩出低代码阶段能承受的范围，整套工作流就要回滚重来。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">团队实践里，租户与场景确认通常在每个新项目的第一天下午就完成，并且写进系统配置文件，作为后续所有动作的环境锚点。</p>
+<section style="margin:34px 0 18px;padding:0 0 0 12px;border-left:4px solid #2563eb;"><h2 style="font-size:19px;line-height:1.45;color:#1f2937;margin:0;font-weight:800;">三、需求文档解析：把客户语言翻译为结构化输入</h2></section>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">上下文确认之后，下一步是需求文档解析。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">需求文档解析的目标，是把客户语言翻译成结构化输入。这一步决定后续所有动作能不能跑通——客户语言不翻译成结构，工程动作就没有依据。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">需求文档解析要产生八个产物：业务对象清单、表单候选清单、流程候选清单、菜单模块初稿、角色权限初稿、Web2 下一阶段输入材料初稿、后端接口缺口初判、不在本阶段实现的接口候选。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">业务对象清单识别客户业务里有哪些核心对象。表单候选清单把对象映射为表单。流程候选清单把客户的业务动作映射为 BPM 流程。菜单模块初稿把客户业务的功能模块映射为菜单。角色权限初稿把客户的角色映射为平台角色和权限范围。Web2 输入材料初稿提前识别哪些体验低代码前端无法支持。后端接口缺口初判识别哪些业务动作现有接口无法满足。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">八个产物做完，需求文档就从客户语言变成工程输入。这一步没有做完，下一步的对象建模就没有方向。</p>
+<section style="margin:34px 0 18px;padding:0 0 0 12px;border-left:4px solid #2563eb;"><h2 style="font-size:19px;line-height:1.45;color:#1f2937;margin:0;font-weight:800;">四、业务对象建模：识别四类对象</h2></section>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">需求文档解析之后，下一步是业务对象建模。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">业务对象建模要回答的问题是：哪些对象要独立建表，哪些只是引用或展示？这一步把客户语言里的对象分成四类：主数据、业务单据、明细数据、展示字段。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">主数据是长期存在、被多个业务复用的对象——客户、商品、设备、组织、部门、人员、租户。这一类对象独立建主数据表单，被多个业务单据引用。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">业务单据是一次业务动作或过程记录——合同、入库单、付款单、审批单、实验配置。这一类对象独立建业务单据表单，引用主数据。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">明细数据是从属于单据的多行数据——商品明细、费用明细、子任务列表。这一类对象优先用动态表格，不单独建表。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">展示字段是为了方便用户查看的冗余信息——商品名称、客户类型、仓库名称。这一类字段用跟随联动只读字段带出，不重复维护。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">四类分错，整个数据结构就崩。最常见的错误是把展示字段当成主数据，重复维护一份带出信息，结果导致客户名称在主数据改了之后，业务单据上仍然是旧名称。最常见的另一种错误是把明细数据当成主数据，单独建一张明细表，结果动态表格无法承载，复杂查询又跑不通。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">FDE 在这一步要克制——不为可能存在的需求过度建模，只为真实存在的业务做骨架。</p>
+<section style="margin:34px 0 18px;padding:0 0 0 12px;border-left:4px solid #2563eb;"><h2 style="font-size:19px;line-height:1.45;color:#1f2937;margin:0;font-weight:800;">五、数据关系矩阵设计：明确表单之间的引用关系和创建拓扑</h2></section>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">四类对象识别之后，下一步是数据关系矩阵设计。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">数据关系矩阵是工作流的关键工程产物。它明确所有表单之间的引用关系，并能据此推导出表单创建的依赖顺序。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">数据关系矩阵的模板是：来源表单、字段 ID、目标表单、关系、显示字段 dlabel、带出字段、是否只读。一行表达一个引用关系。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">数据关系矩阵的三个关键规则：</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">associationForm 只表达&quot;当前字段关联到哪个目标表单&quot;。它不负责带出信息。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">followChange 表达&quot;当前字段跟随本表单中哪个字段变化&quot;。它负责从已选关联记录带出信息。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">leaderFormId 在跟随联动中必须是本表单字段 ID，不是目标表单 ID。这是审计和修复阶段最容易踩的坑——把它写成目标表单 ID，跟随联动就不工作。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">数据关系矩阵做完，表单之间的依赖顺序就确定了：目标表单先于来源表单；被依赖对象必须先创建；自引用、循环引用或确实无法提前解析的关系进入后置补配清单。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">数据关系矩阵是工程化执行的地图。没有这张地图，下一步的依赖排序就只能凭经验，错乱的创建顺序会在后置阶段造成大量补配工作。</p>
+<section style="margin:34px 0 18px;padding:0 0 0 12px;border-left:4px solid #2563eb;"><h2 style="font-size:19px;line-height:1.45;color:#1f2937;margin:0;font-weight:800;">六、表单字段详细设计：字段级工程化</h2></section>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">数据关系矩阵之后，下一步是表单字段详细设计。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">字段级工程化要回答每个字段的七个问题：业务含义是什么、数据来源是什么、数据类型是什么、是否固定枚举、是否引用业务对象、是否只是展示信息、是否参与流程或统计。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">业务含义决定字段是否需要。数据来源决定可编辑、只读、系统生成或关联带出。数据类型决定组件类型：短文本用 input，长文本用 textarea，日期用 date，数量金额用 number，固定枚举用 select 或 radio，布尔用 switch 或 radio，用户用 selUser，业务对象引用用 associationForm，明细列表用 dynamicTable。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">固定枚举的字段必须列出全部枚举选项。引用业务对象的字段必须明确目标表单。展示信息的字段要明确只读。参与流程或统计的字段要明确规范化。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">字段设计做得细，后面的工程执行就稳；做得粗，后面的审计修复就要花大力气。</p>
+<section style="margin:34px 0 18px;padding:0 0 0 12px;border-left:4px solid #2563eb;"><h2 style="font-size:19px;line-height:1.45;color:#1f2937;margin:0;font-weight:800;">七、依赖排序与表单创建：按拓扑顺序串行创建</h2></section>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">字段设计完成之后，下一步是依赖排序与表单创建。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">依赖排序按四层进行：无依赖主数据 → 被依赖基础对象 → 业务单据 → 后置表单。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">无依赖主数据先创建。被多个对象引用的基础对象（组织、部门、人员、区域、设备、客户、商品、仓库）次之。一次业务动作或配置类表单（合同、协议、实验配置、通知、下发记录）再次之。运行记录、台账、复盘、报表类后置表单最后。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">依赖顺序对，则工程执行快。错乱顺序对，则后置阶段必然大返工——典型表现是引用主数据的业务单据先建了，结果发现主数据还没建，业务单据保存不进去；或者基础对象引用的另一个基础对象先建了，结果发现基础对象本身的字段还没定义。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">推荐做法：创建某张表单时，如果它引用的目标表单已经创建，必须在字段中直接写入 associationForm 的完整配置；跟随字段如果依赖本表单中已存在的关联字段，应在创建时直接写入 followChange/leaderFormId/dlabel/readonly。这样可以避免后续补配阶段的大量返工。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">只有自引用、循环依赖、目标表单尚未创建或平台保存后丢失配置时，才进入关联补配阶段。</p>
+<section style="margin:34px 0 18px;padding:0 0 0 12px;border-left:4px solid #2563eb;"><h2 style="font-size:19px;line-height:1.45;color:#1f2937;margin:0;font-weight:800;">八、关联关系与跟随联动补配：补齐创建阶段漏写的跟随联动</h2></section>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">依赖排序与表单创建之后，下一步是关联关系与跟随联动补配。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">这一步补齐两类问题：创建阶段没写入的关联字段、创建阶段没写入的跟随联动。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">关联字段只负责选择目标表单的数据。它必须包含 tableId、formId、dval、dlabel、title 五个字段，否则关联弹窗不知道打开哪个表单。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">跟随字段是本表单中的普通字段，用来从已选择的关联记录中带出信息。它必须包含 leaderFormId（本表单字段 ID）、dlabel、readonly。其中 leaderFormId 必须是本表单字段 ID，例如 product_id，不是目标表单 ID，例如 11058。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">这一阶段不是创建阶段的补丁，而是创建阶段的延续。FDE 在这一步必须认真核对每一个关联字段和每一个跟随字段，避免把 leaderFormId 写成目标表单 ID，避免让带出字段过于复杂，避免让关联嵌套太深。</p>
+<section style="margin:34px 0 18px;padding:0 0 0 12px;border-left:4px solid #2563eb;"><h2 style="font-size:19px;line-height:1.45;color:#1f2937;margin:0;font-weight:800;">九、菜单、权限、流程发布：让数据结构被角色真正访问</h2></section>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">表单、关联、字段做完之后，下一步是菜单、权限、流程发布。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">这一步让数据结构被角色真正访问。数据结构做得再漂亮，用户进不来、用不上，等于零。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">菜单层级规则：业务菜单只允许两级。第一级是模块目录菜单，挂在平台根目录下（parentId=0）。第二级是具体功能菜单，包括表单入口和流程入口，路径分别使用 lowcode/dynamicInfo/{formId} 和 lowcode/dynamicWorkflow/{modelId}。不要在目录下继续创建子目录，不要把多个功能拼成一个大菜单，不要忽略图标格式（使用 png-* 平台标准格式）。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">角色授权规则：分配权限时必须覆盖父级菜单和子菜单，不能只授权子菜单而漏掉父菜单；表单菜单和流程菜单都要授权；权限边界要清晰，避免权限蔓延。权限错配是 AI 项目最常见的隐性故障之一：用户看到菜单点进去，但权限阻挡造成流程跑不通。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">BPM 流程规则：流程模型由开始、用户任务、网关、结束组成；节点分配规则数量必须匹配用户任务数量；流程绑定表单（formType 和 formId）；流程发布到菜单并授权。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">这三件事合在一起，构成企业级封装。少一件，数据结构就还停留在&quot;工程层&quot;，没有被角色真正访问。</p>
+<section style="margin:34px 0 18px;padding:0 0 0 12px;border-left:4px solid #2563eb;"><h2 style="font-size:19px;line-height:1.45;color:#1f2937;margin:0;font-weight:800;">十、端到端业务测试：用真实操作链路验证系统可用</h2></section>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">菜单、权限、流程发布之后，下一步是端到端业务测试。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">端到端业务测试用真实操作链路验证系统可用。测试范围包括：表单 CRUD（新增、查询、更新、删除）、关联表单选择（弹窗是否能打开目标表单）、跟随联动（选择关联对象后是否自动带出字段）、菜单可见（当前用户是否能看到菜单）、图标显示（图标是否正常渲染）、流程发起（是否能创建实例）、流程审批（任务是否能流转）、流程结束（状态和结果是否正确）、数据清理（临时 CRUD 数据是否删除）。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">测试原则有三条。第一条，不能只看 API 创建成功，必须验证前端真实依赖字段。第二条，必须覆盖菜单、权限、流程运行态——只看 API，不看运行态，会漏掉大量隐性故障。第三条，临时数据必须清理，否则下一轮测试会污染。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">端到端测试做完，工作流才真正从工程层走到业务层。</p>
+<section style="margin:34px 0 18px;padding:0 0 0 12px;border-left:4px solid #2563eb;"><h2 style="font-size:19px;line-height:1.45;color:#1f2937;margin:0;font-weight:800;">十一、交付成果确认：业务闭环、用户可持续使用、关键结果可验证</h2></section>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">端到端业务测试通过之后，下一步是交付成果确认。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">交付成果确认是工作流的真正落点。它要回答三个问题：业务闭环是否跑通、用户是否可持续使用、关键结果是否可验证。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">业务闭环跑通，指用户从菜单进入能完成 CRUD、能走完流程、能拿到结果。这一步不能只看技术测试通过，必须看真实用户用一遍能不能跑通。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">用户可持续使用是另一层验证——用户第二天、第三天还能正常使用，没有报错、没有权限阻挡、没有数据残留。这里不能停留在部署成功，必须看一段时间的运行态是否稳定。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">关键结果可验证更深一层：业务的关键指标是否被记录、可被查询、可被复盘。这里不能再看页面漂亮，要追问业务结果是否真的发生了变化。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">这三件事对应&quot;成果优先原则&quot;。系统只是载体，业务结果才是终点。FDE 在交付阶段问的不是&quot;系统上线了吗&quot;，而是&quot;用户用起来了吗、结果变化了吗&quot;。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">端到端测试通过、但交付成果确认失败的案例不少：表单能存数据但用户找不到入口，菜单存在但用户没权限进不去，流程跑通但关键字段没有统计无法复盘，系统跑通但用户第二天登不上无法持续使用。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">这四类问题都说明工作流没有真正落地到成果。</p>
+<section style="margin:34px 0 18px;padding:0 0 0 12px;border-left:4px solid #2563eb;"><h2 style="font-size:19px;line-height:1.45;color:#1f2937;margin:0;font-weight:800;">十二、输出 Web2 下一阶段输入材料：低代码收口</h2></section>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">交付成果确认通过之后，下一步是输出 Web2 下一阶段输入材料。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">这一步是低代码阶段的收口动作，不是 Web2 阶段的启动动作。低代码阶段只输出 Web2 需要的输入材料，但不在本阶段做 Web2 页面。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">输出物包括七件：表单与数据结构清单（formId、tableId、字段、组件类型）、关联关系清单（associationForm 的目标表单、显示字段和值字段）、流程清单（modelId、processKey、绑定表单、用户任务）、菜单和权限清单（菜单 ID、path、授权角色）、可复用接口清单（低代码动态表单接口和 BPM 接口）、Web2 候选页面（需求中低代码前端无法满足的交互点）、后端接口缺口初判（只做判断，不在本阶段新增接口）。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">这一步做完，低代码阶段才算正式收口。下一阶段 Web2 定制前端可以从这里直接接手，避免数据结构理解不一致导致的反复返工。</p>
+<section style="margin:34px 0 18px;padding:0 0 0 12px;border-left:4px solid #2563eb;"><h2 style="font-size:19px;line-height:1.45;color:#1f2937;margin:0;font-weight:800;">十三、工作流是反馈驱动的：每一步都要回头看</h2></section>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">13 步拆开看，每一步都很清楚。但合在一起，难度突然升高：每一步都依赖前一步，但每一步也要回头看上一步是否稳定。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">在表单创建阶段要回头看数据关系矩阵是否完整，矩阵漏了某个对象就先补矩阵。关联补配阶段也要回头看表单创建阶段的关联字段是否正确写入，写错的就先修复。进入表单审计之前，字段详细设计是否清晰要重新过一遍；菜单发布之前，前置的表单是否创建完要确认。角色授权完成之后，要回头看菜单是不是真的发出来了；流程发布之前，授权是否覆盖到所有业务菜单要确认。端到端测试启动时，业务对象建模的四类是否分对要重新核对，分错的回到建模阶段重来。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">反馈驱动的核心是&quot;不要硬推进&quot;。硬推进的代价是后端阶段大返工：跳过表单审计直接进入菜单发布，常常会发现 leaderFormId 写错；端到端测试不跑直接上线，第二天用户登不上才发现问题；交付成果确认不认真，直接进入 Web2，最后发现关键字段根本没有统计。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">工作流不是死顺序，而是反馈驱动的执行链。</p>
+<section style="margin:34px 0 18px;padding:0 0 0 12px;border-left:4px solid #2563eb;"><h2 style="font-size:19px;line-height:1.45;color:#1f2937;margin:0;font-weight:800;">十四、和七步业务闭环的关系</h2></section>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">这一章的工作流和第五章的七步业务闭环是什么关系？</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">七步业务闭环是 FDE 与客户、业务、团队的关系侧——进入现场、需求解构、方案架构、快速搭建、现场迭代、业务验证、资产沉淀。它回答的是 FDE 怎么和外部世界一起把事情做对。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">13 步工作流是 FDE 与平台、工具、数据结构的关系侧——租户与场景确认、需求文档解析、业务对象建模、数据关系矩阵设计、表单字段详细设计、依赖排序与表单创建、关联关系与联动补配、表单审计与修复、菜单发布与图标校验、角色菜单授权、BPM 流程设计与发布、端到端业务测试、输出 Web2 下一阶段输入材料。它回答的是 FDE 怎么和内部基础设施一起把事情做对。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">两者合起来，才是完整的 FDE 工作方法。七步讲的是&quot;和谁一起走、走哪几步&quot;，13 步讲的是&quot;在什么之上干、按什么顺序干&quot;。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">把这一章和第五章放在一起读，FDE 的工作方法既有业务骨架（七步业务闭环），也有技术骨架（13 步工作流）；既覆盖客户侧的过程推进，也覆盖平台侧的工程稳定；既关注每一天的反馈驱动，也关注最终的成果可验证。</p>
+<section style="margin:34px 0 18px;padding:0 0 0 12px;border-left:4px solid #2563eb;"><h2 style="font-size:19px;line-height:1.45;color:#1f2937;margin:0;font-weight:800;">十五、走向下一章：工作流在复杂行业中如何表现</h2></section>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">这一章讲了 13 步工作流作为一个抽象骨架。抽象骨架在每个具体项目里都会被客户业务、平台差异、团队规模所调节。调节得对，工作流跑得通；调节得错，工作流跑不动。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">工作流在复杂行业中如何表现？这是下一章要回答的问题。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">第十一章会用风洞排程系统作为案例，说明 13 步工作流在一个高复杂度、多约束、强时效的产业场景里如何落地：业务对象如何识别、数据关系矩阵如何设计、依赖排序如何处理、端到端测试如何跑通、交付成果如何被验证。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">抽象骨架到具体行业，工作流的骨架不变，调节的尺度和细节千差万别。</p>
+<p style="font-size:15px;line-height:1.95;color:#333333;margin:0 0 1.55em;">下一章展开。</p>
+<section style="margin:34px 0 18px;padding:0 0 0 12px;border-left:4px solid #2563eb;"><h2 style="font-size:19px;line-height:1.45;color:#1f2937;margin:0;font-weight:800;">本章资料来源</h2></section>
+<ol style="font-size:15px;line-height:1.85;color:#333333;margin:0 0 1.6em 1.2em;padding-left:1em;"><li style="margin:0 0 8px;padding-left:2px;"><code style="background:#eef2ff;color:#3730a3;padding:1px 5px;border-radius:4px;font-size:13px;">D:\ai-source-code\yunjing-mcp\docs\methodology\system-build-workflow-guide.md</code></li><li style="margin:0 0 8px;padding-left:2px;"><code style="background:#eef2ff;color:#3730a3;padding:1px 5px;border-radius:4px;font-size:13px;">D:\ai-source-code\yunjing-mcp\docs\methodology\system-development-skill.md</code></li><li style="margin:0 0 8px;padding-left:2px;"><code style="background:#eef2ff;color:#3730a3;padding:1px 5px;border-radius:4px;font-size:13px;">D:\ai-source-code\digital\docs\多客户代码管理解决方案.md</code></li><li style="margin:0 0 8px;padding-left:2px;"><code style="background:#eef2ff;color:#3730a3;padding:1px 5px;border-radius:4px;font-size:13px;">FDE_大纲-下.MD</code></li><li style="margin:0 0 8px;padding-left:2px;"><code style="background:#eef2ff;color:#3730a3;padding:1px 5px;border-radius:4px;font-size:13px;">book-outline/00_全书大纲_倒叙确认版.md</code></li><li style="margin:0 0 8px;padding-left:2px;"><code style="background:#eef2ff;color:#3730a3;padding:1px 5px;border-radius:4px;font-size:13px;">book-outline/manuscript/CH05_AI-FDE的标准工作闭环.md</code></li><li style="margin:0 0 8px;padding-left:2px;"><code style="background:#eef2ff;color:#3730a3;padding:1px 5px;border-radius:4px;font-size:13px;">book-outline/manuscript/CH09_团队资源数字化平台_AI-FDE背后的基础设施.md</code></li></ol>
+  </section>
+  <section style="padding:18px 20px;text-align:center;background:#f8fafc;border-top:1px solid #e5e7eb;">
+    <p style="margin:0 0 4px;color:#64748b;font-size:12px;line-height:1.7;">AI-FDE 书稿连载</p>
+    <p style="margin:0;color:#94a3b8;font-size:12px;line-height:1.7;">Generated by 渔夫-AI</p>
+  </section>
+</section>
